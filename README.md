@@ -3,6 +3,7 @@
 # NavigationBar
 
 底部导航栏：方便实现点击 Tab 时切换 Fragment ，自定义 Tab 图标、标题，支持设置角标等功能。
+![preview](image/device-2019-11-16-180409.png)
 
 ## 主要的类
 
