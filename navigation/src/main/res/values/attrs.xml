@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigationBar">
+        <!-- 选中item的Id -->
+        <attr name="nb_selectedItem" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="NormalItem">
+
+        <!-- 图标，设置selector资源时不需要着色 -->
+        <attr name="ni_icon" format="reference" />
+
+        <!-- 标题 -->
+        <attr name="ni_title" format="string|reference" />
+
+        <!-- 着色，定义不同状态时的颜色 -->
+        <attr name="ni_colorTint" format="reference" />
+
+        <!-- 是否显示角标 -->
+        <attr name="ni_showBadge" format="boolean" />
+
+        <!-- 角标内容，不填默认展示红点 -->
+        <attr name="ni_badgeContent" format="string|reference" />
+
+        <!-- 角标字体颜色 -->
+        <attr name="ni_badgeTextColor" format="color|reference" />
+
+        <!-- 角标背景颜色 -->
+        <attr name="ni_badgeColor" format="color|reference" />
+
+        <!-- 图标是否需要着色 -->
+        <attr name="ni_isIconTint" format="boolean" />
+
+    </declare-styleable>
+</resources>

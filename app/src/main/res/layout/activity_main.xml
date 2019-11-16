@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/Divider"
+        android:layout_above="@+id/nb_main" />
+
+    <com.zerdaket.navigation.NavigationBar
+        android:id="@+id/nb_main"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:nb_selectedItem="@+id/ni_home">
+
+        <!-- 注： ni_icon 和 ni_colorTint 可接受 selector 资源-->
+        <com.zerdaket.navigation.NormalItem
+            android:id="@+id/ni_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            app:ni_colorTint="@color/ui_selector_navi_item"
+            app:ni_icon="@drawable/ic_home"
+            app:ni_isIconTint="true"
+            app:ni_showBadge="true"
+            app:ni_title="首页" />
+
+        <com.zerdaket.navigation.NormalItem
+            android:id="@+id/ni_album"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            app:ni_badgeContent="99+"
+            app:ni_colorTint="@color/ui_selector_navi_item"
+            app:ni_icon="@drawable/ic_album"
+            app:ni_isIconTint="true"
+            app:ni_showBadge="true"
+            app:ni_title="音乐" />
+
+        <com.zerdaket.navigation.NormalItem
+            android:id="@+id/ni_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            app:ni_colorTint="@color/ui_selector_navi_item"
+            app:ni_icon="@drawable/ic_email"
+            app:ni_isIconTint="true"
+            app:ni_title="邮件" />
+
+    </com.zerdaket.navigation.NavigationBar>
+
+</RelativeLayout>
