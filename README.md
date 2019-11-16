@@ -1,6 +1,6 @@
 
 
-#NavigationBar
+# NavigationBar
 
 底部导航栏：方便实现点击 Tab 时切换 Fragment ，自定义 Tab 图标、标题，支持设置角标等功能。
 
@@ -262,4 +262,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
