@@ -143,7 +143,7 @@ public void setSelected(boolean selected);
  * 设置监听
  * @param listener 选中状态改变的监听
  */
-public void setOnSelectedChangeListener(@Nullable onSelectedChangeListener listener);
+public void setOnSelectedChangeListener(@Nullable SelectedChangeListener listener);
 
 /** 
  * 设置图标
