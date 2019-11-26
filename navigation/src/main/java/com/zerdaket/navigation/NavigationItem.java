@@ -15,8 +15,8 @@ public class NavigationItem extends FrameLayout {
 
     private boolean mBroadcasting;
 
-    private OnSelectedChangeListener mOnSelectedChangeListener;
-    private OnSelectedChangeListener mOnSelectedChangeWidgetListener;
+    private SelectedChangeListener mOnSelectedChangeListener;
+    private SelectedChangeListener mOnSelectedChangeWidgetListener;
 
     public NavigationItem(@NonNull Context context) {
         this(context, null);
@@ -81,11 +81,11 @@ public class NavigationItem extends FrameLayout {
     /**
      * @param listener 选中状态改变的监听
      */
-    public void setOnSelectedChangeListener(@Nullable OnSelectedChangeListener listener) {
+    public void setOnSelectedChangeListener(@Nullable SelectedChangeListener listener) {
         mOnSelectedChangeListener = listener;
     }
 
-    void setOnSelectedChangeWidgetListener(OnSelectedChangeListener listener) {
+    void setOnSelectedChangeWidgetListener(SelectedChangeListener listener) {
         mOnSelectedChangeWidgetListener = listener;
     }
 

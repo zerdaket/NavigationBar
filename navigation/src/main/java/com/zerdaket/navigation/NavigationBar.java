@@ -20,7 +20,7 @@ public class NavigationBar extends LinearLayout {
     private static final String LOG_TAG = NavigationBar.class.getSimpleName();
 
     private int mSelectedId = View.NO_ID;
-    private com.zerdaket.navigation.OnSelectedChangeListener mChildOnSelectedChangeListener;
+    private SelectedChangeListener mChildOnSelectedChangeListener;
     private boolean mProtectFromSelectedChange = false;
     private OnSelectedChangeListener mOnSelectedChangeListener;
     private OnSelectedChangeListener mOnSelectedChangeManagerListener;
@@ -309,7 +309,7 @@ public class NavigationBar extends LinearLayout {
         }
     }
 
-    private class SelectedStateTracker implements com.zerdaket.navigation.OnSelectedChangeListener {
+    private class SelectedStateTracker implements SelectedChangeListener {
         @Override
         public void onSelectedChanged(NavigationItem item, boolean isSelected) {
             // prevents from infinite recursion
